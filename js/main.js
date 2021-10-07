@@ -2,6 +2,7 @@ const swiper = new Swiper(".swiper-container", {
   //기본셋팅
   //방향 셋팅 vertical 수직, horizontal 수평 / 설정이 없으면 수평
   direction: "horizontal",
+  watchSildesProgress: true,
   //한번에 보여지는 페이지 숫자
   slidesPerView: 3,
   //페이지와 페이지 사이의 간격
