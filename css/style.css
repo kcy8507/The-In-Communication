@@ -796,6 +796,9 @@ input[type]:focus,
     background-position: 200px 340px;
     background-repeat: no-repeat;
   }
+  .main__text-container {
+    margin-top: -250px;
+  }
   .swiper-container {
     overflow: visible;
   }
@@ -857,6 +860,9 @@ input[type]:focus,
   .inner {
     width: 650px;
   }
+  .main__text-container {
+    margin: 0;
+  }
 
   /* -------------------------------side nav----------------------------- */
   #nav {
@@ -864,6 +870,18 @@ input[type]:focus,
     height: 100vh;
     background: none;
   }
+
+  .side__nav-logo {
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/nav__logo.png);
+    background-size: cover;
+    margin-right: 65px;
+    position: absolute;
+    top: 48px;
+    left: 70px;
+  }
+
   .navbar__toggleBtn {
     width: 45px;
     height: 45px;
