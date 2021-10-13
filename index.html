@@ -18,25 +18,46 @@
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/js/menu.js" defer></script>
     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="/js/swiper.js" defer></script>
     <script src="/js/form-submission-handler.js" defer></script>
     <script src="/js/youtube.js" defer></script>
   </head>
   <body>
     <section id="nav">
+      <a href="#" class="navbar__toggleBtn"
+      ><img src="/images/hamburger.svg"
+    /></a>
+      <div class="black_bg hidden"></div>
+      <div class="sidenav hidden">
+        <div class="sidenav__cancel">
+          <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        </div>
+        <div class="sidenav__lists">
+          <ul class="sidenav__menu">
+            <li><a href="#company">회사소개</a></li>
+            <li><a href="#intro-1">강사진</a></li>
+            <li><a href="#curriculum">프로그램</a></li>
+            <li><a href="#youtube__container">인터뷰</a></li>
+            <li><a href="#instagram">인스타그램</a></li>
+            <li><a href="#contact">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="inner">
         <div class="nav__container">
           <div class="nav__logo"></div>
           <ul class="nav__menu">
-            <li><a href="">회사소개</a></li>
-            <li><a href="">강사진</a></li>
-            <li><a href="">프로그램</a></li>
-            <li><a href="">인터뷰</a></li>
-            <li><a href="">인스타그램</a></li>
-            <li><a href="">문의하기</a></li>
+            <li><a href="#company">회사소개</a></li>
+            <li><a href="#intro-1">강사진</a></li>
+            <li><a href="#curriculum">프로그램</a></li>
+            <li><a href="#youtube__container">인터뷰</a></li>
+            <li><a href="#instagram">인스타그램</a></li>
+            <li><a href="#contact">문의하기</a></li>
           </ul>
         </div>
       </div>
@@ -45,7 +66,7 @@
       <div class="inner">
         <div class="main__text-container">
           <div class="main__text-title">
-            우리는 THE IN<br />
+            우리는 더인<br />
             커뮤니케이션즈입니다
           </div>
           <div class="main__text-content">
@@ -236,6 +257,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
           <button class="swiper-button-prev"></button>
           <button class="swiper-button-next"></button>
         </div>
@@ -253,10 +275,9 @@
             <button class="right-arrow-2"></button>
           </div>
       </div>
-      <!-- <div class="curriculum__card-container"> -->
-        <div class="swiper-container-2">
-          <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
           <div class="curriculum__text-wrap">
           <div class="curriculum__card-text-1">01</div>
           <div class="curriculum__card-text-2">조직 활성화</div>
@@ -269,8 +290,7 @@
           <div class="curriculum__card-text-4">교육대상: 기업기관</div>
         </div>
       </div>
-        <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+        <div class="swiper-slide">
           <div class="curriculum__text-wrap">
           <div class="curriculum__card-text-1">02</div>
           <div class="curriculum__card-text-2">Communication-Skill</div>
@@ -283,8 +303,7 @@
           <div class="curriculum__card-text-4">교육대상: 서비스업 종사자 / 일반 직장인</div>
         </div>
       </div>
-        <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+        <div class="swiper-slide">
           <div class="curriculum__text-wrap">
           <div class="curriculum__card-text-1">03</div>
           <div class="curriculum__card-text-2">취업 스킬 업</div>
@@ -297,8 +316,7 @@
           <div class="curriculum__card-text-4">교육대상: 대학생 / 구직자</div>
         </div>
       </div>
-        <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+        <div class="swiper-slide">
           <div class="curriculum__text-wrap">
           <div class="curriculum__card-text-1">04</div>
           <div class="curriculum__card-text-2">HRD</div>
@@ -310,8 +328,7 @@
           <div class="curriculum__card-text-4">교육대상: 기업 조직</div>
         </div>
       </div>
-      <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+      <div class="swiper-slide">
         <div class="curriculum__text-wrap">
         <div class="curriculum__card-text-1">05</div>
         <div class="curriculum__card-text-2">CS 코칭</div>
@@ -324,8 +341,7 @@
         <div class="curriculum__card-text-4">교육대상: 서비스업 종사자 </div>
       </div>
        </div>
-      <div class="swiper-slide-2">
-        <!-- <div class="curriculum__card"> -->
+      <div class="swiper-slide">
       <div class="curriculum__text-wrap">
       <div class="curriculum__card-text-1">06</div>
       <div class="curriculum__card-text-2">코칭</div>
@@ -339,38 +355,41 @@
     </div>
        </div>
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
     </div>
   </div>
     </div>
     </section>
-    <section id="youtube__container">
-      <div class="youtube">
-        <div class="youtube__text-container">
-          <div class="subtitle__text-container">
-            <div class="subtitle__text-1">04<br> / <br> VIDEO </div>
-            <div class="subtitle__text-2">생생 강의영상</div>
-            <div class="subtitle__text-3">인더커뮤니케이션의<br>
-              다양한 정보를 알아보세요 </div>
-              <div class="youtube__btn">
-                <button class="youtube__btn-more">더 알아보기</button>
-              </div>
-          </div>
+    <section id="youtube__container">  
+      <div class="inner">
+      <div class="youtube__text-container">
+        <div class="subtitle__text-container">
+          <div class="subtitle__text-1">04<br> / <br> VIDEO </div>
+          <div class="subtitle__text-2">생생 강의영상</div>
+          <div class="subtitle__text-3">더인커뮤니케이션의<br>
+            다양한 정보를 알아보세요 </div>
+            <div class="youtube__btn">
+              <button class="youtube__btn-more">더 알아보기</button>
+            </div>
         </div>
+      </div>
+      <div class="youtube">
         <div class="youtube__area">
           <div id="player"></div>
         </div>
-      </div>
+      </div></div>
     </section>
     <section id="instagram">
       <div class="inner">
       <div class="subtitle__text-container">
         <div class="subtitle__text-1">04<br> / <br> INSTAGRAM </div>
         <div class="subtitle__text-2">인스타그램</div>
-        <div class="subtitle__text-3">인더커뮤니케이션의 다양한 정보를 알아보세요</div>
+        <div class="subtitle__text-3">더인커뮤니케이션의 다양한 정보를 알아보세요</div>
           </div>
-          <div class="instagram__imgContainer">
+          <!-- <div class="instagram__imgContainer">
             <iframe src="//lightwidget.com/widgets/afac897afef053c6860cd98c3527d460.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-         </div>
+         </div> -->
         </div>
     </section>
     <section id="contact">
@@ -432,12 +451,13 @@
               <p class="footer__bottom-text-1">더인커뮤니케이션</p>
               <p class="footer__bottom-text-2">대표:000 사업자번호 : 123- 546- 1228<br>
                 본사: 대구광역시 000  000 000 000<br>
-                대표전화 : 02-000-222 FAX: 02-000-0132 E-mail:ddd@naver.com</p>
+                대표전화 : 02-000-222 FAX: 02-000-0132 <br>E-mail:ddd@naver.com</p>
             </div>
             <div class="footer__bottom-time">운영시간:</div>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

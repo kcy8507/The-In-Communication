@@ -41,3 +41,40 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
+const swiper2 = new Swiper(".swiper-container2", {
+  slidesPerView: 2,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    //다음페이지 설정
+    nextEl: ".right-arrow-2",
+    //이전페이지 설정
+    prevEl: ".left-arrow-2",
+  },
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 1,
+  //     grid: {
+  //       rows: 1,
+  //     },
+  //   },
+  //   768: {
+  //     slidesPerView: 1,
+  //     grid: {
+  //       rows: 1,
+  //     },
+  //   },
+  //   1024: {
+  //     slidesPerView: 2,
+  //     grid: {
+  //       rows: 2,
+  //     },
+  //   },
+  // },
+});
