@@ -39,13 +39,15 @@ body {
   display: flex;
   align-items: flex-end;
   z-index: 1;
+  background-color: #fff;
 }
 
 .nav__logo {
-  width: 100px;
-  height: 30px;
-  background-color: yellow;
-  margin-right: 117px;
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/nav__logo.png);
+  background-size: cover;
+  margin-right: 65px;
 }
 .nav__container {
   font-size: 1.8rem;
@@ -558,6 +560,7 @@ body {
 
 #instagram {
   width: auto;
+  display: flex;
   height: 100%;
   background-color: #ffffff;
 }
@@ -705,11 +708,12 @@ input[type]:focus,
 }
 
 .footer__bottom-logo {
-  width: 200px;
-  height: 60px;
-  background-color: yellow;
-  flex-grow: 1.2;
-  margin-right: 102px;
+  width: 159px;
+  height: 159px;
+  background-image: url(../images/footer__logo.png);
+  background-size: cover;
+  /* flex-grow: 1.2; */
+  margin-right: 65px;
 }
 
 .footer__bottom {
@@ -772,7 +776,26 @@ input[type]:focus,
   flex-grow: 3.5;
 }
 
+@media screen and (max-width: 1620px) {
+  .inner {
+    width: 1350px;
+  }
+}
+/* 
+@media screen and (max-width: 1425px) {
+  .inner {
+    width: 1150px;
+  }
+} */
 @media screen and (max-width: 1317px) {
+  .inner {
+    width: 950px;
+  }
+  .main__bg {
+    background-size: 107%;
+    background-position: 200px 340px;
+    background-repeat: no-repeat;
+  }
   .swiper-container {
     overflow: visible;
   }
@@ -824,24 +847,22 @@ input[type]:focus,
     margin-bottom: 75px;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 978px) {
   .inner {
-    width: 630px;
+    width: 830px;
   }
-  #main,
-  #company,
-  #intro-1,
-  #curriculum,
-  #youtube__container,
-  #instagram,
-  #contact {
-    height: 100%;
-    padding: 100px 0;
+}
+@media screen and (max-width: 840px) {
+  .inner {
+    width: 650px;
   }
+
   /* -------------------------------side nav----------------------------- */
   #nav {
     position: absolute;
     height: 100vh;
+    background: none;
   }
   .navbar__toggleBtn {
     width: 45px;
@@ -936,12 +957,12 @@ input[type]:focus,
     display: none;
   }
   /* ----------------------------side nav FIN------------------------------ */
-
   #main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 90px;
   }
   .main__bg {
     position: relative;
@@ -951,7 +972,24 @@ input[type]:focus,
     background-size: 123%;
     background-position: 52px 110px;
   }
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 630px;
+  }
 
+  #company,
+  #intro-1,
+  #curriculum,
+  #youtube__container,
+  #instagram,
+  #contact {
+    height: 100%;
+    padding: 100px 0;
+  }
+  #main {
+    padding-top: 90px;
+  }
   .company__card-container {
     flex-direction: column;
     margin-top: 88px;
