@@ -366,7 +366,7 @@ body {
   margin-bottom: 25px;
 } */
 #curriculum .swiper-slide {
-  width: 387px !important;
+  /* width: 387px !important; */
   height: 329px;
   border-radius: 30px;
   box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
@@ -428,7 +428,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 860px;
+  width: 1200px;
   height: 100vh;
   z-index: 0;
   overflow: hidden;
