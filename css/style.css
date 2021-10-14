@@ -781,6 +781,9 @@ input[type]:focus,
     width: 100%;
   }
 
+  #curriculum {
+    padding: 100px 0;
+  }
   #curriculum .inner {
     display: flex;
     flex-direction: column;
