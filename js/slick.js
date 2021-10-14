@@ -24,6 +24,7 @@ $(function () {
         settings: {
           //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
           slidesToShow: 1,
+          slidesToScroll: 1,
           rows: 1,
         },
       },
