@@ -51,8 +51,8 @@ const swiper2 = new Swiper(".swiper-container2", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  centeredSlides: true,
-  loop: true,
+  // centeredSlides: true,
+  // loop: true,
   navigation: {
     //다음페이지 설정
     nextEl: ".right-arrow-2",
