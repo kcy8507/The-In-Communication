@@ -789,7 +789,9 @@ input[type]:focus,
   #curriculum .subtitle__text-container {
     align-self: center;
   }
-
+  .slider-container {
+    margin-top: 80px;
+  }
   .curriculum-arrow {
     display: none;
   }
