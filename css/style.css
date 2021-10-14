@@ -366,7 +366,7 @@ body {
   margin-bottom: 25px;
 } */
 #curriculum .swiper-slide {
-  /* width: 387px; */
+  width: 387px !important;
   height: 329px;
   border-radius: 30px;
   box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
@@ -878,7 +878,7 @@ input[type]:focus,
     background-size: cover;
     margin-right: 65px;
     position: absolute;
-    top: 48px;
+    top: 25px;
     left: 70px;
   }
 
@@ -1008,6 +1008,12 @@ input[type]:focus,
   #main {
     padding-top: 90px;
   }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: block;
+  }
   .company__card-container {
     flex-direction: column;
     margin-top: 88px;
@@ -1034,5 +1040,69 @@ input[type]:focus,
   }
   textarea {
     width: 605px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inner {
+    width: 380px;
+  }
+  .sidenav__menu a {
+    font-size: 2.6rem;
+    margin-top: 33px;
+  }
+
+  .sidenav__cancel img {
+    width: 21px;
+    height: 21px;
+    margin-top: 67px;
+  }
+  .sidenav__cancel {
+    position: absolute;
+    right: 15%;
+  }
+  .sidenav__lists {
+    margin-top: 142px;
+  }
+  .main__text-title {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  .main__bg {
+    width: 460px;
+    height: 327px;
+    background-size: 129%;
+    background-position: 0px 40px;
+  }
+  .subtitle__text-2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .subtitle__text-3 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  .contact__personalform .contact__form {
+    width: 405px;
+  }
+  textarea {
+    width: 405px;
+  }
+  .contact__btn {
+    width: 158px;
+    height: 51px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: #606060;
+  }
+  .footer__bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__bottom-logo {
+    width: 59px;
+    height: 59px;
+    margin-top: 26px;
+    margin-bottom: 10px;
   }
 }
