@@ -1008,6 +1008,10 @@ input[type]:focus,
   #main {
     padding-top: 90px;
   }
+
+  #curriculum .swiper-container2 {
+    height: auto;
+  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
