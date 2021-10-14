@@ -207,6 +207,26 @@ body {
   align-items: center;
 }
 
+/* .left-arrow-1,
+.right-arrow-1 {
+  width: 31px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  outline: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.left-arrow-1 {
+  margin-right: 30px;
+  background-image: url(../images/leftArrow-1.svg);
+}
+.right-arrow-1 {
+  background-image: url(../images/rightArrow-1.svg);
+} */
+
 .swiper-button-prev,
 .swiper-button-next {
   outline: 0;
@@ -345,22 +365,21 @@ body {
   justify-content: center;
   margin-bottom: 25px;
 } */
-.slider-items {
-  width: 387px !important;
-  height: 330px !important;
+#curriculum .swiper-slide {
+  /* width: 387px !important; */
+  height: 329px;
   border-radius: 30px;
   box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
   background-color: #fff;
-  margin-bottom: 25px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 25px;
 }
-.slick-initialized .slick-slide {
-  display: flex !important;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
+/* #curriculum .swiper-slide {
+  width: 400px;
+} */
 
 #curriculum .subtitle__text-container {
   display: flex;
@@ -392,9 +411,24 @@ body {
 .right-arrow-2 {
   background-image: url(../images/rightArrow-2.svg);
 }
+#curriculum .swiper-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 800px;
+  justify-content: space-between;
+}
+/* .curriculum__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 800px;
+  justify-content: space-between;
+} */
 
-#curriculum .slider-container {
-  width: 930px;
+#curriculum .swiper-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1200px;
   height: 100vh;
   z-index: 0;
   overflow: hidden;
@@ -800,6 +834,10 @@ input[type]:focus,
     align-self: center;
   }
 
+  #curriculum .swiper-container2 {
+    flex-wrap: nowrap;
+  }
+
   .curriculum-arrow {
     display: none;
   }
@@ -816,13 +854,6 @@ input[type]:focus,
 @media screen and (max-width: 978px) {
   .inner {
     width: 830px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .slider-items {
-    width: 522px !important;
-    width: calc(100% / 3);
-    height: 483px !important;
   }
 }
 @media screen and (max-width: 840px) {
@@ -978,6 +1009,9 @@ input[type]:focus,
     padding-top: 90px;
   }
 
+  #curriculum .swiper-container2 {
+    height: auto;
+  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
