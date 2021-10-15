@@ -20,10 +20,10 @@ const swiper = new Swiper(".swiper-container", {
 
   //자동 스크롤링
   //시간 1000 이 1초
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   //페이징
   pagination: {

@@ -7,15 +7,15 @@ const menuList = document.querySelector(".sidenav__menu");
 toggleBtn.addEventListener("click", function () {
   nav.classList.toggle("hidden");
   blackBg.classList.toggle("hidden");
-  document.querySelector("body").style.overflow = "hidden";
+  document.querySelector("html").style.overflow = "hidden";
 });
 cancelBtn.addEventListener("click", function () {
   nav.classList.toggle("hidden");
   blackBg.classList.toggle("hidden");
-  document.querySelector("body").style.removeProperty("overflow");
+  document.querySelector("html").style.removeProperty("overflow");
 });
 menuList.addEventListener("click", function () {
   nav.classList.toggle("hidden");
   blackBg.classList.toggle("hidden");
-  document.querySelector("body").style.removeProperty("overflow");
+  document.querySelector("html").style.removeProperty("overflow");
 });

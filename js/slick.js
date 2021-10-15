@@ -5,7 +5,7 @@ $(function () {
     slidesToShow: 2, // 한 화면에 보여질 컨텐츠 개수
     rows: 2,
     slidesToScroll: 2, //스크롤 한번에 움직일 컨텐츠 개수
-    speed: 100, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+    speed: 500, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
     arrows: true, // 옆으로 이동하는 화살표 표시 여부
     dots: true, // 스크롤바 아래 점으로 페이지네이션 여부
     //autoplay: true, // 자동 스크롤 사용 여부
@@ -33,6 +33,7 @@ $(function () {
         settings: {
           //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
           slidesToShow: 1,
+          slidesToScroll: 1,
           rows: 1,
         },
       },
