@@ -10,12 +10,12 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReady() {
   // div id="player"
   new YT.Player("player", {
-    videoId: "cbO8Gk2ItmU", //최초 재생 유튜브 영상 아이디
+    videoId: "brL3jrElPwk", //최초 재생 유튜브 영상 아이디
     // videoId: 'nWuFq41CdX0',
     playerVars: {
       autoplay: true,
       loop: true,
-      playlist: "cbO8Gk2ItmU",
+      playlist: "brL3jrElPwk",
       // playlist: 'nWuFq41CdX0',
     },
     events: {
