@@ -558,6 +558,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .contact__personalform .contact__form {
   height: 40px;
@@ -573,6 +574,7 @@ body {
   line-height: 2.5rem;
   border-bottom: 1px solid silver;
   background: none;
+  box-sizing: border-box;
 }
 
 .contact__form input:focus ~ label,
@@ -633,7 +635,8 @@ body {
 }
 
 textarea {
-  width: 665px;
+  width: 100%;
+  box-sizing: border-box;
   height: 185px;
   resize: none;
   font-size: 2.1rem;
@@ -1097,13 +1100,17 @@ textarea {
     line-height: 2.1rem;
   }
   .contact__contents {
-    width: 405px;
+    /* width: 405px; */
+    width: 100%;
   }
   .contact__personalform .contact__form {
-    width: 405px;
+    /* width: 405px; */
+    width: 100%;
   }
   textarea {
-    width: 405px;
+    /* width: 405px; */
+    width: 100%;
+    box-sizing: border-box;
   }
   .contact__btn {
     width: 158px;
@@ -1123,6 +1130,10 @@ textarea {
     margin-top: 26px;
     margin-bottom: 10px;
   }
+  #contact .inner {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
 }
 @media screen and (max-width: 380px) {
   .inner {
@@ -1141,12 +1152,14 @@ textarea {
     display: none;
   }
   .contact__contents {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
   }
   .contact__personalform .contact__form {
     width: 300px;
   }
   textarea {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
   }
 }
