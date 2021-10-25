@@ -674,6 +674,10 @@ textarea {
   -webkit-border-radius: 0;
 }
 
+.honeypot-field {
+  display: none;
+}
+
 .footer__bottom-logo {
   width: 159px;
   height: 159px;

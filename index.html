@@ -407,7 +407,7 @@
           간략하게 문의를 하실수도 있습니다</div>
           </div>
           <form class="contact__box gform" method="POST"
-          action="https://script.google.com/macros/s/AKfycbwv6BR7gJ1izmctaO_0cP-DU035rtTgD8etimTh/exec">
+          action="https://script.google.com/macros/s/AKfycbyceb3wlYUm4IKkTRr4uTyxst76RrUg7fLd8c7hYFxgaqtRTxnD/exec">
             <div class="contact__personalform">
               <div class="contact__form">
                 <input id="name" name="이름" required />
@@ -434,6 +434,10 @@
               <textarea id="message"
               name="문의내용"></textarea>
             </div>
+            <fieldset class="pure-group honeypot-field">
+              <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+              <input id="honeypot" type="text" name="honeypot" value="">
+            </fieldset>
             <button class="contact__btn">문의하기</button>
           </form>
         </div>
