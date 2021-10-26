@@ -10,9 +10,6 @@
   --background-color: #fef8ff;
   --accent-color: #fdefff;
   --subtitle-number-color: #dba8e2;
-
-  --lightwidget-padding: 15px;
-  --lightwidget-columns: 4;
 }
 
 html {
@@ -20,11 +17,13 @@ html {
   word-break: keep-all;
   text-align: center;
   overflow-x: hidden;
+  /* overflow: hidden; */
 }
 body {
   position: relative;
   font-family: "pretendard";
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .inner {
   width: 1570px;
@@ -69,10 +68,12 @@ body {
 
 #main {
   height: 100vh;
+  padding: 100px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .main__text-container {
   display: flex;
   flex-direction: column;
@@ -108,6 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
 .company__container {
   margin: 0 auto;
@@ -192,8 +194,9 @@ body {
 }
 
 #intro-1 {
+  padding: 100px 0;
   width: auto;
-  height: 100vh;
+  height: 100%;
   background-image: url(../images/intro-1__bg.png);
   background-size: cover;
   background-position: center;
@@ -206,26 +209,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-/* .left-arrow-1,
-.right-arrow-1 {
-  width: 31px;
-  height: 62px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  outline: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.left-arrow-1 {
-  margin-right: 30px;
-  background-image: url(../images/leftArrow-1.svg);
-}
-.right-arrow-1 {
-  background-image: url(../images/rightArrow-1.svg);
-} */
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -340,8 +323,9 @@ body {
 }
 
 #curriculum {
+  height: 100%;
+  padding: 100px 0;
   width: auto;
-  height: 100vh;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -354,32 +338,23 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-/* .curriculum__card {
-  width: 387px;
-  height: 329px;
-  border-radius: 30px;
-  box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 25px;
-} */
-#curriculum .swiper-slide {
-  /* width: 387px !important; */
-  height: 329px;
-  border-radius: 30px;
-  box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 25px;
-}
 
-/* #curriculum .swiper-slide {
-  width: 400px;
-} */
+.slider-items {
+  width: 387px !important;
+  height: 330px !important;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px 0 rgba(219, 168, 226, 0.35);
+  background-color: #fff;
+  margin-bottom: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.slick-initialized .slick-slide {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 #curriculum .subtitle__text-container {
   display: flex;
@@ -411,25 +386,10 @@ body {
 .right-arrow-2 {
   background-image: url(../images/rightArrow-2.svg);
 }
-#curriculum .swiper-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 800px;
-  justify-content: space-between;
-}
-/* .curriculum__card-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 800px;
-  justify-content: space-between;
-} */
 
-#curriculum .swiper-container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 1200px;
-  height: 100vh;
+.slider-container {
+  width: 930px;
+  height: 100%;
   z-index: 0;
   overflow: hidden;
 }
@@ -502,7 +462,8 @@ body {
 
 #youtube__container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding: 100px 0;
   background-image: url(../images/play__bg.png);
   background-size: cover;
   background-position: center;
@@ -563,18 +524,15 @@ body {
   display: flex;
   height: 100%;
   background-color: #ffffff;
+  padding: 100px 0;
 }
-
-#instagram > .lightwidget-widget {
-  /* width: 277px;
-  height: 277px;*/
-  width: 280px;
-  height: 280px;
-  margin: 20px;
+#instagram .subtitle__text-container {
+  margin-bottom: 45px;
 }
 #contact {
   width: auto;
-  height: 100vh;
+  height: 100%;
+  padding: 100px 0;
   display: flex;
   background-image: url(../images/contact__bg.png);
   background-size: cover;
@@ -599,15 +557,15 @@ body {
 .contact__personalform {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-
 .contact__personalform .contact__form {
   height: 40px;
   width: 665px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .contact__personalform .contact__form input {
   height: 100%;
   width: 100%;
@@ -616,6 +574,7 @@ body {
   line-height: 2.5rem;
   border-bottom: 1px solid silver;
   background: none;
+  box-sizing: border-box;
 }
 
 .contact__form input:focus ~ label,
@@ -664,6 +623,8 @@ body {
 .contact__contents {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 665px;
 }
 .contact__contents label {
   margin-bottom: 10px;
@@ -674,7 +635,8 @@ body {
 }
 
 textarea {
-  width: 665px;
+  width: 100%;
+  box-sizing: border-box;
   height: 185px;
   resize: none;
   font-size: 2.1rem;
@@ -705,6 +667,18 @@ input[type]:focus,
   outline: 0;
   cursor: pointer;
   position: relative;
+}
+input,
+textarea {
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  -webkit-border-radius: 0;
+}
+
+.honeypot-field {
+  display: none;
 }
 
 .footer__bottom-logo {
@@ -764,7 +738,7 @@ input[type]:focus,
 }
 .footer__bottom-text-2 {
   font-size: 1.5rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
   margin-top: 19px;
 }
 .footer__bottom-text {
@@ -799,8 +773,8 @@ input[type]:focus,
   .main__text-container {
     margin-top: -250px;
   }
-  .swiper-container {
-    overflow: visible;
+  #intro-1 {
+    overflow-x: hidden !important;
   }
   .swiper-slide,
   .swiper-slide-active + .swiper-slide {
@@ -825,6 +799,9 @@ input[type]:focus,
     width: 100%;
   }
 
+  #curriculum {
+    padding: 100px 0;
+  }
   #curriculum .inner {
     display: flex;
     flex-direction: column;
@@ -833,11 +810,9 @@ input[type]:focus,
   #curriculum .subtitle__text-container {
     align-self: center;
   }
-
-  #curriculum .swiper-container2 {
-    flex-wrap: nowrap;
+  .slider-container {
+    margin-top: 80px;
   }
-
   .curriculum-arrow {
     display: none;
   }
@@ -854,6 +829,15 @@ input[type]:focus,
 @media screen and (max-width: 978px) {
   .inner {
     width: 830px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .slider-items {
+    width: 522px !important;
+    height: 483px !important;
+  }
+  .slider-container {
+    width: 900px !important;
   }
 }
 @media screen and (max-width: 840px) {
@@ -879,12 +863,13 @@ input[type]:focus,
     margin-right: 65px;
     position: absolute;
     top: 25px;
-    left: 70px;
+    /* left: 25px; */
+    left: 3%;
   }
 
   .navbar__toggleBtn {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     position: absolute;
     right: 8%;
     top: 5%;
@@ -897,10 +882,6 @@ input[type]:focus,
 
   .hidden {
     display: none;
-  }
-
-  .list__hidden {
-    visibility: hidden;
   }
 
   .sidenav {
@@ -1009,14 +990,16 @@ input[type]:focus,
     padding-top: 90px;
   }
 
-  #curriculum .swiper-container2 {
-    height: auto;
-  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     display: block;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
   .company__card-container {
     flex-direction: column;
@@ -1038,6 +1021,9 @@ input[type]:focus,
   .footer__bottom-time {
     display: none;
   }
+  .contact__contents {
+    width: 605px;
+  }
 
   .contact__personalform .contact__form {
     width: 605px;
@@ -1047,7 +1033,34 @@ input[type]:focus,
   }
 }
 
+@media screen and (max-width: 650px) {
+  .inner {
+    width: 500px;
+  }
+  .main__bg {
+    background-position: -18px 110px;
+  }
+  .slider-items {
+    width: 401px !important;
+    height: 403px !important;
+  }
+  .contact__contents {
+    width: 480px;
+  }
+  .contact__personalform .contact__form {
+    width: 480px;
+  }
+  textarea {
+    width: 480px;
+  }
+  .footer__bottom-logo {
+    height: 123px;
+  }
+}
 @media screen and (max-width: 480px) {
+  #company {
+    padding: 0;
+  }
   .inner {
     width: 380px;
   }
@@ -1086,11 +1099,18 @@ input[type]:focus,
     font-size: 1.8rem;
     line-height: 2.1rem;
   }
+  .contact__contents {
+    /* width: 405px; */
+    width: 100%;
+  }
   .contact__personalform .contact__form {
-    width: 405px;
+    /* width: 405px; */
+    width: 100%;
   }
   textarea {
-    width: 405px;
+    /* width: 405px; */
+    width: 100%;
+    box-sizing: border-box;
   }
   .contact__btn {
     width: 158px;
@@ -1102,11 +1122,44 @@ input[type]:focus,
   .footer__bottom-container {
     flex-direction: column;
     align-items: flex-start;
+    height: 283px;
   }
   .footer__bottom-logo {
     width: 59px;
     height: 59px;
     margin-top: 26px;
     margin-bottom: 10px;
+  }
+  #contact .inner {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .inner {
+    width: 350px;
+  }
+  .side__nav-logo {
+    left: 3%;
+  }
+  .company__card-1,
+  .company__card-2,
+  .company__card-3 {
+    width: 288px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .contact__contents {
+    /* width: 300px; */
+    width: 100%;
+  }
+  .contact__personalform .contact__form {
+    width: 300px;
+  }
+  textarea {
+    /* width: 300px; */
+    width: 100%;
   }
 }

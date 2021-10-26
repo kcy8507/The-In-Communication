@@ -29,6 +29,7 @@ body {
   width: 1570px;
   position: relative;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 #nav {
@@ -68,7 +69,7 @@ body {
 
 #main {
   height: 100vh;
-  padding: 100px 0;
+  /* padding: 100px 0; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -109,10 +110,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
+
 .company__container {
   margin: 0 auto;
+}
+
+.subtitle__text-container {
+  width: 100%;
 }
 
 .subtitle__text-1 {
@@ -194,9 +200,10 @@ body {
 }
 
 #intro-1 {
-  padding: 100px 0;
-  width: auto;
-  height: 100%;
+  /* padding: 100px 0; */
+  /* width: auto; */
+  /* height: 100%; */
+  height: 100vh;
   background-image: url(../images/intro-1__bg.png);
   background-size: cover;
   background-position: center;
@@ -323,9 +330,10 @@ body {
 }
 
 #curriculum {
-  height: 100%;
-  padding: 100px 0;
-  width: auto;
+  /* height: 100%; */
+  height: 100vh;
+  /* padding: 100px 0; */
+  /* width: auto; */
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -462,8 +470,9 @@ body {
 
 #youtube__container {
   width: 100%;
-  height: 100%;
-  padding: 100px 0;
+  /* height: 100%; */
+  height: 100vh;
+  /* padding: 100px 0; */
   background-image: url(../images/play__bg.png);
   background-size: cover;
   background-position: center;
@@ -520,9 +529,10 @@ body {
 }
 
 #instagram {
-  width: auto;
+  /* width: auto; */
   display: flex;
   height: 100%;
+  /* height: 100vh; */
   background-color: #ffffff;
   padding: 100px 0;
 }
@@ -530,9 +540,10 @@ body {
   margin-bottom: 45px;
 }
 #contact {
-  width: auto;
-  height: 100%;
-  padding: 100px 0;
+  /* width: auto; */
+  /* height: 100%; */
+  height: 100vh;
+  /* padding: 100px 0; */
   display: flex;
   background-image: url(../images/contact__bg.png);
   background-size: cover;
@@ -548,7 +559,6 @@ body {
   align-items: center;
   margin-top: 100px;
 }
-
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -558,7 +568,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 .contact__personalform .contact__form {
   height: 40px;
@@ -574,7 +583,6 @@ body {
   line-height: 2.5rem;
   border-bottom: 1px solid silver;
   background: none;
-  box-sizing: border-box;
 }
 
 .contact__form input:focus ~ label,
@@ -635,8 +643,7 @@ body {
 }
 
 textarea {
-  width: 100%;
-  box-sizing: border-box;
+  width: 665px;
   height: 185px;
   resize: none;
   font-size: 2.1rem;
@@ -690,14 +697,15 @@ textarea {
   margin-right: 65px;
 }
 
-.footer__bottom {
+/* .footer__bottom {
   border-top: 1px solid var(--text-color);
-}
+} */
 
 .footer__top-container {
   display: flex;
   align-items: center;
   height: 73px;
+  display: none;
 }
 .footer__top-container a {
   text-decoration: none;
@@ -725,8 +733,7 @@ textarea {
   height: 263px;
 }
 .footer__bottom-text-1,
-.footer__bottom-text-2,
-.footer__bottom-time {
+.footer__bottom-text-2 {
   font-family: "GmarketSansMedium";
   text-align: left;
   color: var(--text-color);
@@ -744,26 +751,10 @@ textarea {
 .footer__bottom-text {
   flex-grow: 0.6;
 }
-.footer__bottom-time {
-  font-size: 2.1rem;
-  line-height: 2.4rem;
-  flex-grow: 3.5;
-}
 
-@media screen and (max-width: 1620px) {
+@media screen and (max-width: 1450px) {
   .inner {
-    width: 1350px;
-  }
-}
-/* 
-@media screen and (max-width: 1425px) {
-  .inner {
-    width: 1150px;
-  }
-} */
-@media screen and (max-width: 1317px) {
-  .inner {
-    width: 950px;
+    width: 100%;
   }
   .main__bg {
     background-size: 107%;
@@ -799,12 +790,13 @@ textarea {
     width: 100%;
   }
 
-  #curriculum {
+  /* #curriculum {
     padding: 100px 0;
-  }
+  } */
   #curriculum .inner {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   #curriculum .subtitle__text-container {
@@ -825,12 +817,14 @@ textarea {
     margin-bottom: 75px;
   }
 }
-
-@media screen and (max-width: 978px) {
-  .inner {
-    width: 830px;
+@media screen and (max-width: 1210px) {
+  .company__card-1,
+  .company__card-2,
+  .company__card-3 {
+    width: 100%;
   }
 }
+
 @media screen and (max-width: 960px) {
   .slider-items {
     width: 522px !important;
@@ -841,9 +835,6 @@ textarea {
   }
 }
 @media screen and (max-width: 840px) {
-  .inner {
-    width: 650px;
-  }
   .main__text-container {
     margin: 0;
   }
@@ -872,7 +863,7 @@ textarea {
     height: 35px;
     position: absolute;
     right: 8%;
-    top: 5%;
+    top: 3.5%;
   }
 
   .cancel {
@@ -973,10 +964,6 @@ textarea {
   }
 }
 @media screen and (max-width: 768px) {
-  .inner {
-    width: 630px;
-  }
-
   #company,
   #intro-1,
   #curriculum,
@@ -984,7 +971,7 @@ textarea {
   #instagram,
   #contact {
     height: 100%;
-    padding: 100px 0;
+    padding: 30px 0;
   }
   #main {
     padding-top: 90px;
@@ -1001,6 +988,11 @@ textarea {
   .swiper-button-next {
     display: none;
   }
+  .company__card-1,
+  .company__card-2,
+  .company__card-3 {
+    width: 80%;
+  }
   .company__card-container {
     flex-direction: column;
     margin-top: 88px;
@@ -1010,60 +1002,105 @@ textarea {
   .company__card-3 {
     margin-top: 56px;
   }
-  .company__container {
-    margin: 100px 0px;
-  }
 
   #intro-1 {
     background-image: url(../images/tab__intro-1__bg.png);
   }
 
-  .footer__bottom-time {
-    display: none;
+  .contact__personalform {
+    width: 100%;
   }
   .contact__contents {
-    width: 605px;
+    width: 100%;
   }
-
   .contact__personalform .contact__form {
-    width: 605px;
+    width: 100%;
   }
   textarea {
-    width: 605px;
+    width: 100%;
+  }
+  .footer__bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 283px;
+  }
+  .footer__bottom-logo {
+    width: 59px;
+    height: 59px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+  }
+
+  .footer__bottom-time {
+    display: none;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .inner {
-    width: 500px;
-  }
-  .main__bg {
+  /* .main__bg {
     background-position: -18px 110px;
-  }
+  } */
   .slider-items {
     width: 401px !important;
     height: 403px !important;
   }
-  .contact__contents {
-    width: 480px;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    box-sizing: border-box;
   }
-  .contact__personalform .contact__form {
-    width: 480px;
+  .sidenav {
+    width: 80%;
   }
-  textarea {
-    width: 480px;
+  #main {
+    padding-top: 170px;
+    width: 100%;
   }
-  .footer__bottom-logo {
-    height: 123px;
+  #main .inner {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .side__nav-logo {
+    top: 15px;
+  }
+  .main__bg {
+    width: 100%;
+    background-size: cover;
+    background-position: -60px 100px;
+  }
+
+  .company__container {
+    margin: 25px 0px;
+  }
+  .company__card-container {
+    margin-top: 25px;
+  }
+  .company__card-2,
+  .company__card-3 {
+    margin-top: 25px;
+  }
+
+  #intro-1 .inner {
+    flex-grow: 1;
+  }
+  .swiper-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
   }
 }
 @media screen and (max-width: 480px) {
-  #company {
-    padding: 0;
+  .swiper-container {
+    margin-top: 50px;
   }
-  .inner {
-    width: 380px;
-  }
+
   .sidenav__menu a {
     font-size: 2.6rem;
     margin-top: 33px;
@@ -1085,11 +1122,12 @@ textarea {
     font-size: 3.2rem;
     line-height: 5rem;
   }
+  #main .inner {
+    /* height: 100%; */
+    flex-grow: 1;
+  }
   .main__bg {
-    width: 460px;
-    height: 327px;
-    background-size: 129%;
-    background-position: 0px 40px;
+    flex-grow: 1;
   }
   .subtitle__text-2 {
     font-size: 3rem;
@@ -1099,18 +1137,13 @@ textarea {
     font-size: 1.8rem;
     line-height: 2.1rem;
   }
-  .contact__contents {
-    /* width: 405px; */
-    width: 100%;
+
+  .slider-items {
+    width: calc(100vw - 30px) !important;
+    border: 1px solid rgba(219, 168, 226, 0.65);
   }
-  .contact__personalform .contact__form {
-    /* width: 405px; */
-    width: 100%;
-  }
-  textarea {
-    /* width: 405px; */
-    width: 100%;
-    box-sizing: border-box;
+  .slider-container {
+    margin-top: 25px;
   }
   .contact__btn {
     width: 158px;
@@ -1119,47 +1152,12 @@ textarea {
     line-height: 2.2rem;
     color: #606060;
   }
-  .footer__bottom-container {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 283px;
-  }
-  .footer__bottom-logo {
-    width: 59px;
-    height: 59px;
-    margin-top: 26px;
-    margin-bottom: 10px;
-  }
-  #contact .inner {
-    width: 100%;
-    padding: 0 15px 0 15px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .inner {
-    width: 350px;
-  }
-  .side__nav-logo {
-    left: 3%;
-  }
-  .company__card-1,
-  .company__card-2,
-  .company__card-3 {
-    width: 288px;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-  .contact__contents {
-    /* width: 300px; */
+
+  #footer {
     width: 100%;
   }
-  .contact__personalform .contact__form {
-    width: 300px;
-  }
-  textarea {
-    /* width: 300px; */
+  #footer .inner {
     width: 100%;
+    padding: 0 15px;
   }
 }

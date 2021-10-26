@@ -16,7 +16,6 @@ $(function () {
     nextArrow: ".right-arrow-2", // 다음 화살표 모양 설정
     dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
     draggable: true, //드래그 가능 여부
-
     responsive: [
       // 반응형 웹 구현 옵션
       {
