@@ -333,7 +333,6 @@ body {
   /* height: 100%; */
   height: 100vh;
   /* padding: 100px 0; */
-  /* width: auto; */
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -346,7 +345,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-
+#curriculum .subtitle__text-container {
+  width: 30%;
+}
 .slider-items {
   width: 387px !important;
   height: 330px !important;
@@ -832,6 +833,9 @@ textarea {
   }
   .slider-container {
     width: 900px !important;
+  }
+  #curriculum .subtitle__text-container {
+    width: 60%;
   }
 }
 @media screen and (max-width: 840px) {
