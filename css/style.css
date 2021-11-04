@@ -518,6 +518,7 @@ body {
   outline: 0;
   background: none;
   cursor: pointer;
+  /* text-decoration: none; */
 }
 
 #player {
